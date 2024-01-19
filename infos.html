@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            padding: 0px; /* Abstand zwischen Bild und Rahmen */
+            display: inline-block; /* Damit der Rahmen die Größe des Bildes annimmt */
+        }
+        #flagPicture {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+        .informations {
+            line-height: 0.5; /* Hier kannst du den gewünschten Wert einstellen */
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Infos
+    </h1>
+    <input type="text" id="question" placeholder="question">
+    <button onclick="getInfos()">Give infos</button><br><br>
+    <p id="result"></p><br>
+
+    <p class="informations" id="infoContinent">Continent:</p>
+    <p class="informations" id="infoCountry">Country:</p>
+    <p class="informations" id="infoCapital">Capital:</p>
+
+    <div id="blockFlagPicture" class="image-container" style="display: none;">
+        <img id="flagPicture" src="" alt="flagge">
+    </div><br>
+
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="infos.js"></script>
+</body>
+</html>

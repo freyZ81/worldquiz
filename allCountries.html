@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All countries</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+        th, tr {
+            width: 250px;
+            max-width: 250px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: rgba(0, 0, 0, 0.25);
+            color: black;
+        }
+        #europe {
+            background-color: rgba(38, 255, 0, 0.333);
+        }
+        #asia {
+            background-color: rgba(255, 4, 0, 0.333);
+        }
+        #africa {
+            background-color: rgba(255, 213, 0, 0.333);
+        }
+        #oceania {
+            background-color: rgba(0, 225, 255, 0.333);
+        }
+        #north-america {
+            background-color: rgba(21, 0, 252, 0.333);
+        }
+        #south-america {
+            background-color: rgba(255, 0, 132, 0.333);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Name all countries
+    </h1>
+    <p id="choosedContinents"></p>
+    <strong><p id="timer">00:00</p></strong>
+    <input type="text" id="inputCountry" placeholder="country">
+    <button onclick="submitCountry()">Submit</button>
+    <button onclick="giveUp()" id="buttonGiveUp">Give up</button>
+    <button onclick="restart()" id="buttonRestart">Restart</button>
+    <button onclick="startTimer()">Start</button>
+
+    <p id="counter"></p>
+    <br>
+    <p id="result"></p>
+    <br>
+    <table id="tableMissingCountries" style="display: none;">
+        <tr>
+            <th>Missing countries</th>
+        </tr>
+    </table>
+    <br>
+    <table id="tableContinents">
+        <tr>
+            <th id="continents">Continents</th>
+        </tr>
+        <tr>
+            <td id="asia" style="display: none;">Asia</td>
+        </tr>
+        <tr>
+            <td id="europe" style="display: none;">Europe</td>
+        </tr>
+        <tr>
+            <td id="oceania" style="display: none;">Oceania</td>
+        </tr>
+        <tr>
+            <td id="africa" style="display: none;">Africa</td>
+        </tr>
+        <tr>
+            <td id="north-america" style="display: none;">North America</td>
+        </tr>
+        <tr>
+            <td id="south-america" style="display: none;">South America</td>
+        </tr>
+    </table>
+    <br>
+    <table id="tableCountries">
+        <tr>
+            <th id="countryContinents">Countries</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+      
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="allCountries.js"></script>
+</body>
+</html>

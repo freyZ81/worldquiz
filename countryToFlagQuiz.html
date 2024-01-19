@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country to flag</title>
+    <style>
+        .flags-container {
+            width: 500px;
+            height: 150px;
+        }
+        .image-container {
+            width: 100px;
+            height: 80px;
+            padding: 0px; /* Abstand zwischen Bild und Rahmen */
+            display: inline-block; /* Damit der Rahmen die Größe des Bildes annimmt */
+        }
+        img {
+            max-width: 100px;
+            max-height: 80px;
+            height: auto;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Guess the flag by country
+    </h1>
+    <p id="choosedContinents"></p>
+    <p id="question"></p><br>
+    <div class="flags-container">
+        <div class="image-container">
+            <img id="flagPicture1" src="" alt="flag1" value="" onclick="bildKlick(this)">
+        </div>
+        <div class="image-container">
+            <img id="flagPicture2" src="" alt="flag2" value="" onclick="bildKlick(this)">
+        </div>
+        <div class="image-container">
+            <img id="flagPicture3" src="" alt="flag3" value="" onclick="bildKlick(this)">
+        </div>
+        <div class="image-container">
+            <img id="flagPicture4" src="" alt="flag4" value="" onclick="bildKlick(this)">
+        </div>
+    </div><br><br>
+    
+    <button onClick="removeCurrentCapital()">Delete current</button>
+    <button onClick="removePreviousCapital()">Delete previous</button>
+    <p id="result"></p><br>
+    <p id="extraText"></p>
+    <br>
+    <p id="countriesLeft"></p>
+    <p>Delete after: <input type="text" id="numberAutoDelete" placeholder="number of count"></p>
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="countryToFlag.js"></script>
+
+</body>
+</html>

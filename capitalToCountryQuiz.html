@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Capital Quiz</title>
+</head>
+<body>
+    <h1>
+      Capital to country
+    </h1>
+    <p id="choosedContinents"></p>
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="country">
+    <button onclick="checkAnswer()">Submit</button><br><br>
+    <button onClick="removeCurrentCapital()">Delete current</button>
+    <button onClick="removePreviousCapital()">Delete previous</button>
+    <p id="result"></p><br>
+    <p id="extraText"></p>
+    <br>
+    <p id="countriesLeft"></p>
+    <p>Delete after: <input type="text" id="numberAutoDelete" placeholder="number of count"></p>
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="capitalToCountryQuiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambled word</title>
+</head>
+<body>
+    <h1>
+        Scrambled word
+    </h1>
+    <p id="choosedContinents">choosedContinents</p>
+    <input type="checkbox" id="checkboxCountry" checked="true">
+    <label for="checkboxCountry">Country</label>
+    <br>
+    <input type="checkbox" id="checkboxCapital">
+    <label for="checkboxCapital">Capital</label>
+    <br>
+    <br>
+    <button onclick="setNewWord()">Set new word</button>
+
+
+    <p id="question">Which type is the following word?</p>
+    <p id="scrambledWord"></p>
+    
+    <input type="text" id="inputWord" placeholder="word">
+    <button onclick="submitWord()">Submit</button>
+    <button onclick="giveUp()">Give up</button>
+
+    <p id="result"></p>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+      
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="scrambledWord.js"></script>
+</body>
+</html>

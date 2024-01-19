@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            padding: 0px; /* Abstand zwischen Bild und Rahmen */
+            display: inline-block; /* Damit der Rahmen die Größe des Bildes annimmt */
+        }
+        #flagPicture {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p id="choosedContinents"></p>
+    <p id="question">Is it correct that the following is the flag of Germany?</p>
+
+    <div class="image-container">
+        <img id="flagPicture" src="" alt="Flag">
+    </div>
+    <br>
+    <button onClick="checkAnswer(true)">Yes</button>
+    <button onClick="checkAnswer(false)">No</button><br><br>
+    <button id="hintButton" onClick="giveHint()" style="display: none;">Hint</button>
+
+    <p id="hint"></p>
+    <p id="result"></p><br>
+    <br>
+
+
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="isItCorrectQuiz.js"></script>
+</body>
+</html>

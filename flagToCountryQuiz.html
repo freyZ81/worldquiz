@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag to country</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            padding: 0px; /* Abstand zwischen Bild und Rahmen */
+            display: inline-block; /* Damit der Rahmen die Größe des Bildes annimmt */
+        }
+        #flagPicture {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Guess the country by flag
+    </h1>
+    <p id="choosedContinents"></p>
+    <h3>
+        Which country has this flag?
+    </h3>
+
+    <div class="image-container">
+        <img id="flagPicture" src="" alt="flagge">
+    </div><br>
+    <p id="notes"></p><br>
+    <input type="text" id="answer" placeholder="country">
+    <button onclick="checkAnswer()">Submit</button><br><br>
+    <button onClick="removeCurrentCapital()">Delete current</button>
+    <button onClick="removePreviousCapital()">Delete previous</button><br><br>
+    <input type="checkbox" id="checkSaveContinent">
+    <label for="checkSaveContinent">Save continent</label>
+    <div id="blockCheckCountry" style="display: none;">
+        <input type="checkbox" id="checkCheckCountry">
+        <label for="checkCheckCountry">Check continent</label>
+    </div>
+    <p id="result"></p><br>
+    <p id="extraText"></p>
+    <br>
+    <p id="countriesLeft"></p>
+    <p>Delete after: <input type="text" id="numberAutoDelete" placeholder="number of count"></p>
+
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+    
+    <script src="countrylist.js"></script>
+    <script src="flagToCountryQuiz.js"></script>
+</body>
+</html>

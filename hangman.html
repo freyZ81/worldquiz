@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+</head>
+<body>
+    <h1>
+        Hangman
+    </h1>
+    <p id="choosedContinents">choosedContinents</p>
+    <input type="checkbox" id="checkboxCountry" checked="true">
+    <label for="checkboxCountry">Country</label>
+    <br>
+    <input type="checkbox" id="checkboxCapital">
+    <label for="checkboxCapital">Capital</label>
+    <br>
+    <br>
+    <button onclick="setNewWord()">Set new word</button>
+    <br>
+    <br>
+    <input type="text" id="inputLetter" placeholder="letter">
+    <button onclick="submitLetter()">Submit</button>
+    <button onclick="giveUp()">Give up</button>
+    <br>
+    <p id="word">Word</p>
+    <br>
+    <p id="result"></p>
+    <p id="wrongLetters"></p>
+
+    <p id="leftGuesses"></p>
+    <input type="number" id="maxNumbersOfGuesses" placeholder="numbers of guesses">
+
+    <br>
+    <br>
+    <button onclick="window.location.href = 'quizindex.html';">Back to home</button>
+
+    <script src="countrylist.js"></script>
+    <script src="hangman.js"></script>
+</body>
+</html>
